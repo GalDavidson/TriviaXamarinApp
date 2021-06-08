@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TriviaXamarinApp.Views.EditOrNewQuestion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="enter question" Text="{Binding Question}" />
+            <Entry Placeholder="enter correct answer" Text="{Binding Correct}" />
+            <Entry Placeholder="enter wrong answer" Text="{Binding Option1}" />
+            <Entry Placeholder="enter another wrong answer" Text="{Binding Option2}" />
+            <Entry Placeholder="enter another wrong answer" Text="{Binding Option3}" />
+
+            <Button Text="send" Command="Send" CommandParameter=""/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
